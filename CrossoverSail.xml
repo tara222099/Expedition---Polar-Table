@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<crossoverchart>
+  <elements>
+    <element name="A3" group="DownwindSails" type="Sail">
+      <visible val="true" />
+      <shapeopacity val="40" />
+      <shapepattern val="Solid" />
+      <linewidth val="1" />
+      <colour r="255" g="0" b="0" />
+      <labelposition tws="16" twa="143" />
+      <straightline val="false" />
+      <bezierpoints>
+        <point tws="6" twa="145" />
+        <point tws="7" twa="157" />
+        <point tws="13" twa="167" />
+        <point tws="17" twa="169" />
+        <point tws="21" twa="168" />
+        <point tws="28" twa="159" />
+        <point tws="25" twa="140" />
+        <point tws="22" twa="134" />
+        <point tws="18" twa="130" />
+        <point tws="10" twa="123" />
+        <point tws="6" twa="127" />
+        <point tws="6" twa="132" />
+      </bezierpoints>
+      <alias val="A3-A;A3-B" />
+      <labelfont size="14" bold="true" italic="false" underline="false" r="1" g="1" b="1" />
+      <sailarea val="495.000000" units="m²" display="false" />
+    </element>
+    <element name="Code55" group="DownwindSails" type="Sail">
+      <visible val="true" />
+      <shapeopacity val="40" />
+      <shapepattern val="Solid" />
+      <linewidth val="1" />
+      <colour r="255" g="255" b="0" />
+      <labelposition tws="10" twa="122" />
+      <straightline val="false" />
+      <bezierpoints>
+        <point tws="3" twa="100" />
+        <point tws="6" twa="130" />
+        <point tws="7" twa="128" />
+        <point tws="10" twa="124" />
+        <point tws="13" twa="127" />
+        <point tws="17" twa="130" />
+        <point tws="21" twa="135" />
+        <point tws="22" twa="134" />
+        <point tws="13" twa="107" />
+        <point tws="10" twa="96" />
+        <point tws="6" twa="87" />
+        <point tws="4" twa="77" />
+        <point tws="2" twa="68" />
+      </bezierpoints>
+      <labelfont size="14" bold="true" italic="false" underline="false" r="1" g="1" b="1" />
+    </element>
+    <element name="Jib" group="Headsails" type="Sail">
+      <visible val="true" />
+      <shapeopacity val="40" />
+      <shapepattern val="Solid" />
+      <linewidth val="1" />
+      <colour r="135" g="206" b="250" />
+      <labelposition tws="9" twa="65" />
+      <straightline val="false" />
+      <bezierpoints>
+        <point tws="3" twa="76" />
+        <point tws="13" twa="108" />
+        <point tws="22" twa="134" />
+        <point tws="23" twa="136" />
+        <point tws="22" twa="130" />
+        <point tws="20" twa="108" />
+        <point tws="16" twa="54" />
+        <point tws="15" twa="31" />
+        <point tws="7" twa="38" />
+        <point tws="3" twa="44" />
+      </bezierpoints>
+      <alias val="J1-A;J1-B" />
+      <labelfont size="14" bold="true" italic="false" underline="false" r="1" g="1" b="1" />
+      <sailarea val="136.000000" units="m²" display="false" />
+      <sailweightkg val="123.000000" />
+    </element>
+    <element name="Jib #1" group="Headsails" type="Sail">
+      <visible val="true" />
+      <shapeopacity val="40" />
+      <shapepattern val="Solid" />
+      <linewidth val="1" />
+      <colour r="0" g="191" b="255" />
+      <labelposition tws="19" twa="65" />
+      <straightline val="false" />
+      <bezierpoints>
+        <point tws="15" twa="36" />
+        <point tws="16" twa="58" />
+        <point tws="17" twa="69" />
+        <point tws="20" twa="108" />
+        <point tws="22" twa="131" />
+        <point tws="23" twa="136" />
+        <point tws="24" twa="138" />
+        <point tws="30" twa="154" />
+        <point tws="30" twa="120" />
+        <point tws="24" twa="92" />
+        <point tws="19" twa="29" />
+        <point tws="17" twa="28" />
+        <point tws="15" twa="31" />
+      </bezierpoints>
+      <alias val="J2-A;J2-B" />
+      <labelfont size="14" bold="true" italic="false" underline="false" r="1" g="1" b="1" />
+      <sailarea val="135.000000" units="m²" display="false" />
+      <sailweightkg val="45.400002" />
+    </element>
+    <element name="Jib #2" group="Headsails" type="Sail">
+      <visible val="true" />
+      <shapeopacity val="40" />
+      <shapepattern val="Solid" />
+      <linewidth val="1" />
+      <colour r="30" g="144" b="255" />
+      <labelposition tws="24" twa="65" />
+      <straightline val="false" />
+      <bezierpoints>
+        <point tws="20" twa="41" />
+        <point tws="24" twa="95" />
+        <point tws="27" twa="108" />
+        <point tws="30" twa="117" />
+        <point tws="30" twa="92" />
+        <point tws="29" twa="83" />
+        <point tws="27" twa="67" />
+        <point tws="26" twa="50" />
+        <point tws="25" twa="36" />
+        <point tws="25" twa="28" />
+        <point tws="24" twa="28" />
+        <point tws="20" twa="28" />
+        <point tws="19" twa="29" />
+      </bezierpoints>
+      <alias val="J3-A;J3-B" />
+      <labelfont size="14" bold="true" italic="false" underline="false" r="1" g="1" b="1" />
+      <sailarea val="135.000000" units="m²" display="false" />
+      <sailweightkg val="45.400002" />
+    </element>
+    <element name="Jib #3" group="Headsails" type="Reef">
+      <visible val="true" />
+      <shapeopacity val="30" />
+      <shapepattern val="Solid" />
+      <linewidth val="1" />
+      <colour r="0" g="0" b="255" />
+      <labelposition tws="28" twa="50" />
+      <straightline val="false" />
+      <bezierpoints>
+        <point tws="25" twa="36" />
+        <point tws="26" twa="50" />
+        <point tws="27" twa="73" />
+        <point tws="29" twa="86" />
+        <point tws="30" twa="93" />
+        <point tws="31" twa="69" />
+        <point tws="31" twa="38" />
+        <point tws="30" twa="29" />
+        <point tws="28" twa="27" />
+        <point tws="26" twa="28" />
+        <point tws="25" twa="28" />
+      </bezierpoints>
+      <alias val="J4-A;J4-B" />
+      <labelfont size="14" bold="true" italic="false" underline="false" r="1" g="1" b="1" />
+      <sailarea val="135.000000" units="m²" display="false" />
+      <sailweightkg val="45.400002" />
+    </element>
+  </elements>
+  <lines />
+</crossoverchart>
