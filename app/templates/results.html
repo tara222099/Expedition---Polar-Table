@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ app_title }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body class="bg-light">
+    <main class="container py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-11">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div>
+              <h1 class="h5 mb-1">{{ app_title }}</h1>
+              <div class="text-muted small">
+                ファイル: <code>{{ filename }}</code> / 行数: {{ n_rows }} / TWA列: <code>{{ col_twa }}</code>
+              </div>
+            </div>
+            <div class="d-flex gap-2">
+              <a class="btn btn-outline-secondary" href="/">新しいログ</a>
+              <a class="btn btn-primary" href="/download/{{ analysis_id }}/twa_correction.csv">CSVダウンロード</a>
+            </div>
+          </div>
+
+          <div class="card shadow-sm mb-3">
+            <div class="card-body">
+              <div class="row g-2 small text-muted">
+                <div class="col-md-3">|TWA| min: <code>{{ params.abs_twa_min }}</code></div>
+                <div class="col-md-3">|TWA| max: <code>{{ params.abs_twa_max }}</code></div>
+                <div class="col-md-3">bin: <code>{{ params.bin_size_deg }}</code></div>
+                <div class="col-md-3">min/side: <code>{{ params.min_points_per_side }}</code></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card shadow-sm mb-3">
+            <div class="card-body">
+              {{ plot_html | safe }}
+            </div>
+          </div>
+
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h2 class="h6 mb-3">推定テーブル</h2>
+              {% if table_empty %}
+                <div class="alert alert-warning mb-0">
+                  条件を満たすビンがありませんでした。<br />
+                  - TWAが符号付きで記録されているか（Port/Starboardで ± になるか）<br />
+                  - <code>min/side</code> を小さくする / ビン幅を広げる / 範囲を狭める<br />
+                  を試してください。
+                </div>
+              {% else %}
+                <div class="table-responsive">
+                  <table class="table table-sm table-striped align-middle">
+                    <thead>
+                      <tr>
+                        <th>|TWA| bin (deg)</th>
+                        <th>bias (deg)</th>
+                        <th>correction to ADD (deg)</th>
+                        <th>n(port)</th>
+                        <th>n(starboard)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% for r in table %}
+                        <tr>
+                          <td><code>{{ "%.1f"|format(r.abs_twa_bin_deg) }}</code></td>
+                          <td>{{ "%.3f"|format(r.bias_deg) }}</td>
+                          <td><strong>{{ "%.3f"|format(r.correction_deg) }}</strong></td>
+                          <td>{{ r.n_port }}</td>
+                          <td>{{ r.n_starboard }}</td>
+                        </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
