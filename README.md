@@ -9,7 +9,7 @@ This repo includes a minimal Python web app to upload an Expedition log CSV and 
 ### Run
 
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 . .venv/bin/activate
 pip install -r expedition_log_web/requirements.txt
 python -m expedition_log_web.app
